@@ -6,17 +6,17 @@ Study Material Directory
 
 
 
-Detail| Information
+Detail Information
 
-Student Name| Kaveri Manoharrao Bhumbar
+Student Name: Kaveri Manoharrao Bhumbar
 
-Roll No.| MLU24F082
+Roll No.: MLU24F082
 
-Division| B
+Division: B
 
-Statement No.| 34
+Statement No.: 34
 
-Project Title| Study Material Directory
+Project Title: Study Material Directory
 
 
 
@@ -98,7 +98,7 @@ The major features of the Study Material Directory are:
 
 
 
-5.1 Add Study Material
+1\. Add Study Material
 
 
 
@@ -106,7 +106,7 @@ Users can enter study-material details and store them in the database.
 
 
 
-5.2 View Study Materials
+2\. View Study Materials
 
 
 
@@ -114,7 +114,7 @@ Stored study-material records can be displayed from the database.
 
 
 
-5.3 Search Materials
+3\. Search Materials
 
 
 
@@ -122,7 +122,7 @@ Users can search for required study materials.
 
 
 
-5.4 Subject and Unit Organization
+4\. Subject and Unit Organization
 
 
 
@@ -130,7 +130,7 @@ Materials can be organized using subject and unit information.
 
 
 
-5.5 Resource Links
+5\. Resource Links
 
 
 
@@ -138,7 +138,7 @@ Each material can contain a resource link for accessing the required study resou
 
 
 
-5.6 Uploader Information
+6\. Uploader Information
 
 
 
@@ -146,7 +146,7 @@ The name of the person who uploaded the material can be stored.
 
 
 
-5.7 Database Connectivity
+7\. Database Connectivity
 
 
 
@@ -154,7 +154,7 @@ PHP is connected with the MySQL database to perform database operations.
 
 
 
-5.8 Input Validation
+8\. Input Validation
 
 
 
@@ -162,7 +162,7 @@ Input values are checked before processing to reduce invalid data.
 
 
 
-5.9 Secure Database Queries
+9\. Secure Database Queries
 
 
 
@@ -178,19 +178,19 @@ Prepared/binded SQL statements are used where applicable to reduce the risk of S
 
 
 
-Technology| Purpose
+Technology Purpose
 
-HTML| Structure of web pages
+HTML: Structure of web pages
 
-CSS| Styling and page design
+CSS: Styling and page design
 
-PHP| Server-side programming
+PHP: Server-side programming
 
-MySQL| Database management
+MySQL: Database management
 
-XAMPP| Local development environment
+XAMPP: Local development environment
 
-InfinityFree| Web hosting
+InfinityFree: Web hosting
 
 
 
@@ -228,23 +228,21 @@ File Description
 
 
 
-File| Description
+"index.php": Main page/interface of the system
 
-"index.php"| Main page/interface of the system
+"save.php": Processes and saves study-material information
 
-"save.php"| Processes and saves study-material information
+"search.php": Performs search operations
 
-"search.php"| Performs search operations
+"view.php": Displays stored study materials
 
-"view.php"| Displays stored study materials
+"config.php": Contains database connection/configuration
 
-"config.php"| Contains database connection/configuration
+"style.css": Contains styling for the web pages
 
-"style.css"| Contains styling for the web pages
+"database.sql": Contains database/table SQL commands
 
-"database.sql"| Contains database/table SQL commands
-
-"README.md"| Project documentation
+"README.md": Project documentation
 
 
 
@@ -264,19 +262,19 @@ Study Material Table
 
 
 
-Field| Description
+Field Description
 
-ID| Unique identifier for each material
+ID: Unique identifier for each material
 
-Title| Title/name of the study material
+Title: Title/name of the study material
 
-Subject| Subject related to the material
+Subject: Subject related to the material
 
-Unit| Unit number or unit name
+Unit: Unit number or unit name
 
-Resource Link| Link to the study resource
+Resource Link: Link to the study resource
 
-Uploader Name| Name of the person who uploaded the material
+Uploader Name: Name of the person who uploaded the material
 
 
 
@@ -400,31 +398,21 @@ Open Study Material Directory
 
 
 
-The project demonstrates the basic CRUD/database operations.
+The project demonstrates the following database operations:
 
 
 
-INSERT
+1\. INSERT: Used to add new study material records.
 
 
 
-Used to add new study-material records.
-
-
-
-INSERT INTO study\_material
-
-(title, subject, unit, resource\_link, uploader\_name)
+INSERT INTO study\_material (title, subject, unit, resource\_link, uploader\_name)
 
 VALUES (?, ?, ?, ?, ?);
 
 
 
-SELECT
-
-
-
-Used to retrieve stored study materials.
+2\. SELECT: Used to retrieve and display stored study materials.
 
 
 
@@ -432,27 +420,11 @@ SELECT \* FROM study\_material;
 
 
 
-SEARCH
+3\. SEARCH: Used to find study materials based on relevant information such as title, subject, or unit. The search operation uses SQL queries with the "LIKE" condition.
 
 
 
-Search queries are used to find materials based on relevant information such as title, subject, or unit.
-
-
-
-UPDATE
-
-
-
-If implemented in the project, update operations can be used to modify existing material details.
-
-
-
-DELETE
-
-
-
-If implemented in the project, delete operations can be used to remove unwanted records.
+These operations allow users to add, view, and search study materials efficiently.
 
 
 
@@ -468,7 +440,7 @@ The project considers basic database and application security practices.
 
 
 
-Prepared Statements
+\-Prepared Statements
 
 
 
@@ -476,7 +448,7 @@ Prepared/binded SQL statements are used for database operations where applicable
 
 
 
-Input Validation
+\-Input Validation
 
 
 
@@ -484,7 +456,7 @@ User input is validated before it is processed or stored.
 
 
 
-Output Escaping
+\-Output Escaping
 
 
 
@@ -492,7 +464,7 @@ Database/user-provided values should be escaped before displaying them in HTML t
 
 
 
-Database Credentials
+\-Database Credentials
 
 
 
@@ -512,7 +484,7 @@ The following test cases can be used to verify the system.
 
 
 
-Test Case| Input/Action| Expected Result
+Test Case |Input/Action| Expected Result
 
 Add Material| Enter valid material details| Record should be stored
 
@@ -582,7 +554,7 @@ The project can be enhanced in the future by adding:
 
 
 
-\- Student and admin role-based login.
+\- Adding Student and admin role-based login.
 
 \- Material upload functionality.
 
@@ -606,7 +578,59 @@ The project can be enhanced in the future by adding:
 
 
 
-16\. Conclusion
+16. Project Screenshots
+
+
+
+Screenshots of the following pages can be added to the final report:
+
+
+
+1\. Home/Main Page
+
+2\. Add Study Material Page
+
+3\. Successfully Added Material
+
+4\. View Study Materials Page
+
+5\. Search Page
+
+6\. Search Result
+
+7\. Login Page
+
+8\. Logout/Session Result
+
+9\. MySQL Database
+
+10\. Hosted Website on InfinityFree
+
+
+
+\---
+
+
+
+17. Project Repository
+
+
+
+GitHub Repository:
+
+https://github.com/kaveribhumbar0803-ctrl/Study-Material-Directory
+
+
+
+Hosted Website:
+
+https://collegedemo08.infinityfree.io/
+
+\---
+
+
+
+18\. Conclusion
 
 
 
@@ -626,7 +650,7 @@ This project provides a useful foundation for managing academic resources digita
 
 
 
-17\. Declaration
+19\. Declaration
 
 
 
@@ -643,56 +667,4 @@ Division: B
 Statement No.: 34
 
 
-
-\---
-
-
-
-18\. Project Screenshots
-
-
-
-Screenshots of the following pages can be added to the final report:
-
-
-
-1\. Home/Main Page
-
-2\. Add Study Material Page
-
-3\. Successfully Added Material
-
-4\. View Study Materials Page
-
-5\. Search Page
-
-6\. Search Results
-
-7\. Login Page
-
-8\. Logout/Session Result
-
-9\. MySQL Database
-
-10\. Hosted Website on InfinityFree
-
-
-
-\---
-
-
-
-19\. Project Repository
-
-
-
-GitHub Repository:
-
-Add your final GitHub repository link here.
-
-
-
-Hosted Website:
-
-Add your final InfinityFree website link here.
 
